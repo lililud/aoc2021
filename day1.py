@@ -25,6 +25,7 @@ def print_logs(log_str):
 print('===========PART 1===========')
 for curr_line in lines:
 	try:
+		# am i pythonic yet
 		curr_line = int(curr_line)
 	except:
 		continue
@@ -65,3 +66,9 @@ print(f'increased: {increased}')
 
 
 
+items = [1, 2, 3, 4, 5]
+f = lambda prev, curr,: 'increased' if curr > prev else 'decreased'
+
+array = list(map(f, items))
+prnt = lambda x : print(x)
+map(prnt, array)
