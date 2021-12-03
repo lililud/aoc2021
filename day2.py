@@ -44,15 +44,16 @@ def parse_ans():
 		)
 	return horizontal, depth, aim
 
+
+horizontal, aim, depth = parse_ans()
+
 def part_one():	
-	p(1)	
-	horizontal, aim, depth = parse_ans()
+	p(1)
 	print_answer(horizontal=horizontal, depth=depth) 
 
 
 def part_two():	
 	p(2)
-	horizontal, aim, depth = parse_ans()
 	print_answer(horizontal=horizontal, depth=aim)
 
 part_one()
