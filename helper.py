@@ -12,3 +12,6 @@ def get_input(url):
 
 	request = requests.get(url, headers=headers)
 	return request.text
+
+def p(num):
+	print(f'===========PART {num}===========')
